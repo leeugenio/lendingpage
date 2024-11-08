@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>pedido</title>
+
+</head>
+<body>
+    
+    <div class="imga">
+        <img src="ft1.png" alt="">
+    </div>
+
+    <div class="form-container">
+        <h1>Cadastro</h1>
+        <form id="cadastroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required/>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required/>
+
+            <label>Gênero</label>
+
+            <div class="radio-group">
+
+                <input 
+                    type="radio"
+                    id="masculino"
+                    name="genero"
+                    value="masculino"
+                    required
+                />
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="genero" value="feminino"/>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="outro" name="genero" value="outro"/>
+                <label for="outro">Outros</label>
+
+            </div>
+
+            <label for="pais">País:</label>
+            <select name="pais" id="pais" required>
+                <option value="brasil">Brasil</option>
+                <option value="argentina">Argentina</option>
+                <option value="costaRica">Costa Rica</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+    
+    <div class="imga">
+        <img src="ft2.png" alt="">
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
